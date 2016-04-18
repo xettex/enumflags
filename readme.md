@@ -37,7 +37,7 @@ specializing the `enumflags::has_flags_attribute` structure:
 
 ```cpp
 template <>
-struct enumflags::has_flags_attrbute<T> {
+struct enumflags::has_flags_attribute<T> {
     static constexpr bool value{true};
 };
 ```
@@ -92,7 +92,7 @@ struct enumflags::has_flags_attribute<status_register> {
 
 One might use this flag type as follows:
 
-```
+```cpp
 #include "status_register.hpp"
 
 using namespace enumflags;
